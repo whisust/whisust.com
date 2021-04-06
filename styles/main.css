@@ -1,0 +1,151 @@
+html {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.75;
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: rgb(253, 246, 227);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+}
+
+h1 {
+    font-size: 1.7rem;
+    line-height: 1.1;
+    letter-spacing: 0.15rem;
+
+}
+
+h1, h2 {
+    letter-spacing: -0.1rem;
+}
+
+main {
+    margin-top: 0;
+
+}
+
+section {
+    margin: 3.5rem 0;
+}
+
+section:first-of-type {
+    margin-top: 0;
+}
+
+
+.container {
+    padding: 0 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    position: static;
+    padding: 2.5rem 0;
+    background: transparent;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a {
+    border-radius: 0.35rem;
+    padding: 0.75rem 1.25rem;
+    margin: 0 .25rem;
+}
+
+.navbar a.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.navbar a:first-of-type {
+    margin-left: -1.5rem;
+}
+
+
+.navbar a:hover, .navbar a[aria-current="page"] {
+    color: rgb(238, 232, 213);
+}
+
+
+.navbar a:hover {
+    background: rgb(238, 232, 213);;
+}
+
+.navbar a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.presentation {
+    background-color: rgba(131, 148, 150, 0.4);
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 3rem 0;
+
+}
+
+.presentation h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.presentation h1 {
+    max-width: 700px;
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+.presentation img {
+    border-radius: 0.7rem;
+    border: solid black;
+    width: 350px;
+    display: block;
+    max-width: 350px;
+    margin: 1.5rem 1.5rem 1.5rem 2rem;
+}
+
+
+.boxed {
+    border: solid 1px red;
+}
+
