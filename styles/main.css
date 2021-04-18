@@ -2,6 +2,7 @@ html {
     font-weight: 400;
     font-size: 1.1em;
     line-height: 1.75;
+    letter-spacing: 0.05rem;
     font-family: "JetBrains Mono", sans-serif;
     background-color: rgb(253, 246, 227);
 }
@@ -17,7 +18,6 @@ body {
 }
 
 
-
 h1, h2, h3, h4, h5 {
     margin: 0 0 1.5rem;
     font-weight: 700;
@@ -29,7 +29,6 @@ h1 {
     font-size: 1.7rem;
     line-height: 1.1;
     letter-spacing: 0.15rem;
-
 }
 
 h1, h2 {
@@ -64,6 +63,11 @@ section:first-of-type {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 .navbar {
@@ -100,24 +104,14 @@ a {
 }
 
 
-.navbar a:hover, .navbar a[aria-current="page"] {
-    color: rgb(238, 232, 213);
-}
-
-
 .navbar a:hover {
-    background: rgb(238, 232, 213);;
+    background: rgb(238, 232, 213);
 }
 
-.navbar a:visited {
-    text-decoration: none;
-    color: black;
-}
 
 .presentation {
     background-color: rgba(131, 148, 150, 0.4);
     justify-content: space-between;
-    max-width: 1000px;
     padding: 3rem 0;
 
 }
@@ -142,6 +136,30 @@ a {
     display: block;
     max-width: 350px;
     margin: 1.5rem 1.5rem 1.5rem 2rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid black 3px;
+}
+
+.view-all {
+    border-radius: 0.35rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    background: #E8E1CD;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.view-all:hover {
+    background: #DBD4C1;
 }
 
 
