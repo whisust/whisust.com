@@ -227,6 +227,43 @@ time {
     letter-spacing: -.02rem;
 }
 
+.paragraph {
+    text-align: justify;
+}
+
+.projects {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.75rem 0;
+    grid-gap: 3rem;
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+    border-width: 0;
+}
+
+.project .icon {
+    font-size: 1.5rem;
+    width: 40px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.project p {
+    margin-top: -1.3rem;
+}
+
 .boxed {
     border: solid 1px red;
 }
