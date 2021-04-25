@@ -283,3 +283,35 @@ time {
     border: solid 1px red;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.footer nav {
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--light-font-color);
+    font-weight: 400;
+    padding: 1rem 2rem;
+}
+
+.footer-links a:hover {
+    background: var(--background-color-darker);
+    color: var(--dark-text-color);
+    border-radius: 0.35rem;
+}
+
+.footer-external-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-external-links a {
+    padding: 0 0;
+}
+
