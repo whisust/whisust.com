@@ -2,21 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Antoine Latrille | Personal website</title>
+    <title>Base Template | Whisust</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
-    <nav>
-        <a href="about.html">About</a>
-    </nav>
-    <nav>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-<main></main>
+<nav class="navbar">
+    <div class="container flex">
+        <div class="flex">
+            <div>
+                <a class="brand" href="index.html"><span class="emoji">💾</span>[antoine@home]~ ></a>
+            </div>
+        </div>
+        <div class="flex">
+            <a href="about.html">About</a>
+            <a href="blog/index.html">Blog</a>
+            <a href="guides/index.html">Guides</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="index">
+        <section>
+            <div class="container">
+                <h2 class="section-title">
+                    Title.
+                    <a class="view-all" href="blog/index.html">View all</a>
+                </h2>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <section class="container">
+        <nav class="footer-links">
+            <a href="blog/index.html">Blog</a>
+            <a href="guides/index.html">Guides</a>
+            <a href="rss.xml">RSS</a>
+            <a href="">Donate</a>
+        </nav>
+        <nav class="footer-external-links">
+            <!--        <a href="guides.html">Guides</a>-->
+            <!--        <a href="about.html">Donate</a>-->
+            <!--        <a href="guides.html">Guides</a>-->
+        </nav>
+    </section>
+</footer>
 
 </body>
 </html>
