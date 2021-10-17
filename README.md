@@ -1,4 +1,5 @@
 # Whisust.com
+## About
 Personal website.
 
 The website contains:
@@ -11,6 +12,14 @@ The website contains:
 - a Blog page, with blog articles
 - an RSS feed
 
+
+## Installation
+
+- Install Soupault
+- run `soupault build` in the correct dir
+- the html pages will be generated in the `$dir/build`
+
+- locally i've installed apache (on windows yurk) to test the .htaccess file
 
 ## TODO
 - [ ] Either gen the files and re-commit the build dir or find a way to do it on clevercloud
