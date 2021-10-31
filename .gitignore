@@ -1,4 +1,3 @@
 .idea
 clevercloud/
-.s3cfg
-soupault-tries/build/
+build/

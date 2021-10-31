@@ -94,8 +94,8 @@
 [widgets.page-title]
   widget = "title"
   selector = "h1"
-  default = "My Homepage"
-  append = " &mdash; My Homepage"
+  default = "Whisust"
+  append = " &mdash; Whisust"
 
   # Insert a <title> in a page if it doesn't have one already.
   # By default soupault assumes if it's missing, you don't want it.
@@ -111,19 +111,9 @@
 [widgets.insert-header]
   widget = "include"
   file = "templates/header.html"
-  selector = "div#header"
+  selector = "header"
 
 [widgets.insert-footer]
   widget = "include"
   file = "templates/footer.html"
-  selector = "footer#footer"
-
-
-# <blink> elements are evil, delete them all
-[widgets.no-blink]
-  widget = "delete_element"
-  selector = "blink"
-
-  # By default this widget deletes all elements matching the selector,
-  # but you can set this option to false to delete just the first one
-  delete_all = true
+  selector = "footer"

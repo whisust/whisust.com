@@ -20,6 +20,8 @@ The website contains:
 - the html pages will be generated in the `$dir/build`
 
 - locally i've installed apache (on windows yurk) to test the .htaccess file
+- start it by running C:\Apache24\bin\httpd.exe -k start using an *admin* windows terminal
+- access it through http://www.whisust-dev.com
 
 ## TODO
 - [ ] Either gen the files and re-commit the build dir or find a way to do it on clevercloud
