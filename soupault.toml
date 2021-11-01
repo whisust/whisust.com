@@ -93,6 +93,7 @@
 # Takes the content of the first <h1> and inserts it into the <title>
 [widgets.page-title]
   widget = "title"
+  exclude_page = "index.html"
   selector = "h1"
   default = "Whisust"
   append = " &mdash; Whisust"
@@ -108,12 +109,28 @@
   html = '<meta name="generator" content="soupault">'
   selector = "head"
 
-[widgets.insert-header]
+[widgets.insert-aside]
   widget = "include"
-  file = "templates/header.html"
-  selector = "header"
+  file = "templates/aside.html"
+  selector = "aside"
 
 [widgets.insert-footer]
   widget = "include"
   file = "templates/footer.html"
   selector = "footer"
+
+
+[widgets.insert-reading-time-container]
+  section = "blog"
+  exclude_page = "blog/index.html"
+  widget = "insert_html"
+  action = "insert_after"
+  selector = "h1"
+  html = '<div>Estimated reading time: <span id="reading-time"></span>.</div>'
+
+[widgets.insert-reading-time]
+  after = "insert-reading-time-container"
+  widget = "reading-time"
+  selector = "#reading-time"
+  content_selector = "main"
+  reading_speed = 300
