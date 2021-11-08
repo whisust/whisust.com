@@ -134,3 +134,7 @@
   selector = "#reading-time"
   content_selector = "main"
   reading_speed = 300
+
+[widgets.make-links-safe]
+  widget = "safe-links"
+  attributes = ["nofollow", "noopener"]

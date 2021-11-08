@@ -12,13 +12,16 @@ The website contains:
 - a Blog page, with blog articles
 - an RSS feed
 
+## Convention
+
+CSS: [SMACSS](https://www.toptal.com/css/smacss-scalable-modular-architecture-css) 
+
 
 ## Installation
 
 - Install Soupault
 - run `soupault build` in the correct dir
 - the html pages will be generated in the `$dir/build`
-
 - locally i've installed apache (on windows yurk) to test the .htaccess file
 - start it by running C:\Apache24\bin\httpd.exe -k start using an *admin* windows terminal
 - access it through http://www.whisust-dev.com

@@ -13,6 +13,7 @@
     /* Dimensions */
     --navbar-width: 80px;
     --navbar-height: 80px;
+    --navbar-icon-size: 50px;
     --footer-height: 30px;
 }
 
@@ -70,6 +71,22 @@ footer {
 
 
 /* Module */
+.navbar--item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar--icon {
+    height: var(--navbar-icon-size);
+    width: var(--navbar-icon-size);
+}
+
+.footer section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100%;
+}
 
 /* State */
 .bordered {
