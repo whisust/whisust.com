@@ -4,7 +4,7 @@
 :root {
     /* Colors */
     --navbar-color: pink;
-    --footer-color: pink;
+    --footer-color: lavender;
     --footer-background-color: pink;
     --background-color: coral;
 
@@ -21,17 +21,12 @@
     --navbar-height: 80px;
     --navbar-icon-size: 50px;
     --footer-height: 30px;
+    --main-width: 60%;
 }
 
 /* Base */
-html {
-    margin: 0;
-    font-family: "JetBrains Mono", sans-serif;
-    background: var(--background-color);
-}
-
-a {
-    color: #000;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
 button {
@@ -42,9 +37,11 @@ button {
 
 /* Layout */
 body {
-    box-sizing: border-box;
     line-height: 1.6;
     font-size: 1rem;
+    margin: 0;
+    font-family: "JetBrains Mono", sans-serif;
+    background: var(--background-color);
 }
 
 aside {
@@ -95,6 +92,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .navbar--icon {
     height: var(--navbar-icon-size);
     width: var(--navbar-icon-size);
@@ -102,7 +100,6 @@ footer {
 
 
 /* Module */
-
 
 
 /* State */
