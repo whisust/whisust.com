@@ -5,7 +5,13 @@
     /* Colors */
     --navbar-color: pink;
     --footer-color: pink;
+    --footer-background-color: pink;
     --background-color: coral;
+
+    --dark-font-color: black;
+    --medium-font-color: grey;
+    --font-color: darkgrey;
+    --bright-font-color: lightgrey;
 
     --ugly-border-color: deeppink;
     --ugly-background-color: pink;
@@ -37,6 +43,8 @@ button {
 /* Layout */
 body {
     box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 aside {
@@ -69,8 +77,19 @@ footer {
     z-index: 10;
 }
 
+.footer section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
 
-/* Module */
+.footer nav {
+    margin: 0 1rem;
+    gap: 0.25rem;
+    display: flex;
+}
+
 .navbar--item {
     margin-bottom: 20px;
     display: flex;
@@ -81,12 +100,10 @@ footer {
     width: var(--navbar-icon-size);
 }
 
-.footer section {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    height: 100%;
-}
+
+/* Module */
+
+
 
 /* State */
 .bordered {
@@ -94,3 +111,10 @@ footer {
 }
 
 /* Theme */
+.footer--made-by {
+    color: var(--medium-font-color);
+}
+
+.footer a {
+    color: var(--font-color);
+}
