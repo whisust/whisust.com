@@ -3,15 +3,30 @@
 /* Variables */
 :root {
     /* Colors */
-    --navbar-color: pink;
-    --footer-color: lavender;
-    --footer-background-color: pink;
-    --background-color: coral;
+    /* Main Colors*/
+    --primary: deeppink;
+    --reverse: white;
 
+    /* Layout colors */
+    --navbar-color: lavender;
+    --footer-color: #f3f3fa;
+    --footer-background-color: white;
+    --background-color: white;
+
+    /* Fonts & Links colors */
     --dark-font-color: black;
     --medium-font-color: grey;
     --font-color: darkgrey;
     --bright-font-color: lightgrey;
+    --heading-font-color: var(--primary);
+    --link-color: lightpink;
+
+    /* Others */
+    --border-color: lavender;
+    --light-border-color: pink;
+    --dark-opacity: rgba(0, 0, 0, 0.2);
+    --dark-opacity-hover: rgba(0, 0, 0, 0.3);
+
 
     --ugly-border-color: deeppink;
     --ugly-background-color: pink;
@@ -21,7 +36,6 @@
     --navbar-height: 80px;
     --navbar-icon-size: 50px;
     --footer-height: 30px;
-    --main-width: 60%;
 }
 
 /* Base */
@@ -34,12 +48,15 @@ button {
     border: 1px solid #f2f2f2;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Layout */
 body {
     line-height: 1.6;
     font-size: 1rem;
-    margin: 0;
     font-family: "JetBrains Mono", sans-serif;
     background: var(--background-color);
 }
@@ -88,9 +105,11 @@ footer {
 }
 
 .navbar--item {
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: var(--navbar-width);
+    align-items: center;
 }
 
 .navbar--icon {
@@ -100,14 +119,13 @@ footer {
 
 
 /* Module */
-
-
-/* State */
-.bordered {
-    border: 1px solid var(--ugly-border-color);
+.container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
 }
 
-/* Theme */
 .footer--made-by {
     color: var(--medium-font-color);
 }
@@ -115,3 +133,50 @@ footer {
 .footer a {
     color: var(--font-color);
 }
+
+
+/* State */
+.bordered {
+    border: 1px solid var(--ugly-border-color);
+}
+
+a:hover {
+    background: var(--primary);
+    color: var(--reverse);
+    border-top: 2px solid var(--primary);
+}
+
+.navbar a:hover {
+    background: var(--dark-opacity);
+    border: none;
+}
+
+.footer a:hover {
+    background: none;
+    border: none;
+}
+
+/* Theme */
+h1, h2, h3, h4 {
+    margin: 0 0 1.25rem;
+    color: var(--heading-font-color);
+}
+
+article a {
+    color: var(--link-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary);
+}
+
+article li a {
+    border: none;
+}
+
+section {
+    width: 100%;
+}
+
+section:not(:first-child) {
+    margin-top: 3rem;
+}
+
