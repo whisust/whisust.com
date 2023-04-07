@@ -3,11 +3,12 @@ interface Props {
   href: string;
   color?: string;
   blank?: boolean;
+  embedded?: boolean;
 }
 
 const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'pink'];
 
-const { href, color, blank } = Astro.props;
+const { href, color, blank, embedded } = Astro.props;
 ---
 
 <style>
@@ -30,7 +31,10 @@ const { href, color, blank } = Astro.props;
     color
       ? `hover:bg-${color}`
       : `hover:bg-${colors[Math.floor(Math.random() * colors.length)]}`,
-    'btn bg-white sanchez inline-block py-2 px-4 border-2 border-black transition-all ease-in-out duration-150',
+    embedded
+        ? 'py-1 px-2'
+        : 'py-2 px-4',
+    'btn bg-white sanchez inline-block  border-2 border-black transition-all ease-in-out duration-150',
   ]}
 >
   <slot />

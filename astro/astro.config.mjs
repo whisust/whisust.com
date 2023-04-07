@@ -37,8 +37,11 @@ const getSafeList = () => {
 };
 
 export default defineConfig({
-  site: 'https://brutal.elian.codes/',
+  site: 'https://www.whisust.com/',
   trailingSlash: 'ignore',
+  experimental: {
+    assets: true
+  },
   integrations: [
     sitemap(),
     unocss({
