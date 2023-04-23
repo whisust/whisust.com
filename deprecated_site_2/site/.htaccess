@@ -1,5 +1,0 @@
-RewriteEngine On
-
-# Remove "index.html" on direct requests only
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteRule ^(|.+/)index\.html$ /$1 [R=301,L]

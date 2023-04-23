@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Default.astro';
+import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
+import MobileSocials from '../components/home/MobileSocials.astro';
+import Card from '../components/generic/Card.astro';
+import Button from '../components/generic/Button.astro';
+import TagItem from '../components/blog/TagItem.astro';
+import portrait from '../assets/images/home-portrait.jpg';
+
+const techList = [
+  { name: 'Astro', url: 'https://astro.build/' },
+  { name: 'Flutter', url: 'https://flutter.dev/' },
+  { name: 'Python', url: 'https://www.python.org/' },
+  { name: 'Rust', url: 'https://www.rust-lang.org/fr' },
+  { name: 'SolidJS', url: 'https://www.solidjs.com/' },
+  { name: 'System Design', url: 'https://en.wikipedia.org/wiki/Systems_design' },
+  { name: 'UX', url: 'https://lawsofux.com/' },
+];
+---
+
+<Layout
+  title='Home'
+  pageTitle='Whisust | Home'
+  description='Welcome on my personal website.'
+>
+  <main class='bg-green p-6'>
+    <MobileSocials class='mb-4'/>
+    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
+      <h2 class='hidden'>About Brutal</h2>
+      <Card
+        color='yellow'
+        extraClasses='flex flex-col justify-between gap-4 items-start md:col-span-6'
+      >
+        <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
+          CTO & Tech Lead <a
+            class='text-blue'
+            target='_blank'
+            href='www.newfundcap.com/'>@Newfund</a
+          >
+        </p>
+        <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
+          After-hours career mentor in the development world
+        </p>
+        <p class='mt-2 outfit text-lg md:text-xl lg:text-3xl'>
+          Located in Paris 🇫🇷
+        </p>
+        <Button href='/blog/'>Check out the blog &rarr;</Button>
+      </Card>
+      <Card color='white' extraClasses='col-span-2 !p-0'>
+        <img class='h-full w-full object-cover rounded' width='800' height='800' src={portrait.src} alt="A portrait of myself"/>
+      </Card>
+
+    </section>
+    <section class='grid md:grid-cols-2 gap-8 mt-8'>
+      <Card color='blue'>
+        <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
+          What do I work with?
+        </h2>
+        <ul class='flex gap-4 flex-wrap'>
+          {
+            techList.map((item) => (
+                <li>
+                  <TagItem>
+                    <a
+                        href={item.url}
+                        target='_blank'
+                        title={`Go to ${item.name}`}
+                    >
+                      {item.name}
+                    </a>
+                  </TagItem>
+                </li>
+            ))
+          }
+        </ul>
+      </Card>
+      <Card color='orange'>
+        <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+          Who am I?
+        </h2>
+        <p class='poppins'>
+          I am Antoine, CTO
+          <a class='underline' target='_blank' title="to Newfund webite" href='http://www.newfundcap.com/'>@Newfund</a>
+          and mentor for new Python web developers through <a class='underline' target='_blank' title="to OpenClassrooms webite" href='https://www.openclassrooms.com/'>@OpenClassrooms</a>.
+          I've been working as a software engineer since 2014 and evolved mostly in the backend side of it, from web development to API with sprinkles of machine learning.
+        </p>
+        <p class='mt-4 poppins'>
+          My focus went from solving technical problems to solving people problems. Thus, I'm currently learning on the design side, be it graphical, UX or system design. I'm always happy when I have to think about interactions between things and anticipate or discover behaviors.
+        </p>
+        <p class='mt-4 poppins'>
+          Head over the <Button href='/about/' embedded>About</Button> page to read more.
+        </p>
+        <p class='mt-4 poppins'>
+          Go to my <Button href='/projects/' embedded>Projects</Button> for an extended view of my current projects.
+        </p>
+      </Card>
+    </section>
+    <RecentBlogPosts />
+  </main>
+</Layout>

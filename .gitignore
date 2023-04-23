@@ -1,3 +1,6 @@
 .idea
 clevercloud/
-build/
+.astro
+node_modules
+dist
+.DS_Store
