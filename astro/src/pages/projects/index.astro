@@ -1,0 +1,15 @@
+---
+import Layout from "@layouts/Default.astro";
+import ProjectList from '@components/projects/ProjectList.astro'
+const projects = [];
+---
+
+<Layout
+  title="Projects"
+  description="Whisust | On this page you can find a collection of personnal projects"
+  pageTitle="Whisust"
+>
+  <main class="bg-green p-6">
+    <ProjectList projects={projects} />
+  </main>
+</Layout>
