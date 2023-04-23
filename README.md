@@ -30,12 +30,3 @@ Commands:
 | `npm run dev`     | Start a local server on http://localhost:3000 |
 | `npm run build`   | Build the production version on `/.dist`      |
 | `npm run preview` | Preview the build locally, before deploying   |
-
-## [Deprecated] Installation
-
-- Install Soupault
-- run `soupault build` in the correct dir
-- the html pages will be generated in the `$dir/build`
-- locally i've installed apache (on windows yurk) to test the .htaccess file
-- start it by running C:\Apache24\bin\httpd.exe -k start using an *admin* windows terminal
-- access it through http://www.whisust-dev.com
